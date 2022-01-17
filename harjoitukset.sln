@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kiuas", "kiuas.csproj", "{ACEFA8C5-6515-4DCC-9492-EDCE8E9C7421}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp33", "..\ConsoleApp33\ConsoleApp33.csproj", "{868FF6E7-ABA3-42D8-B5BD-CC0DFB5B65B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Albumi", "albumi\Albumi\Albumi.csproj", "{AB405C94-783D-4846-BDA4-67B26F015C5D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{ACEFA8C5-6515-4DCC-9492-EDCE8E9C7421}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACEFA8C5-6515-4DCC-9492-EDCE8E9C7421}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACEFA8C5-6515-4DCC-9492-EDCE8E9C7421}.Release|Any CPU.Build.0 = Release|Any CPU
-		{868FF6E7-ABA3-42D8-B5BD-CC0DFB5B65B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{868FF6E7-ABA3-42D8-B5BD-CC0DFB5B65B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{868FF6E7-ABA3-42D8-B5BD-CC0DFB5B65B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{868FF6E7-ABA3-42D8-B5BD-CC0DFB5B65B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB405C94-783D-4846-BDA4-67B26F015C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB405C94-783D-4846-BDA4-67B26F015C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB405C94-783D-4846-BDA4-67B26F015C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB405C94-783D-4846-BDA4-67B26F015C5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
