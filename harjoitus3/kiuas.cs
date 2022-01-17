@@ -30,12 +30,9 @@ namespace harjoitus3
                 b = "";
                    
             }
-            if (!päällä)
-            {
-                Console.WriteLine("kiuas on pois päältä\n");
-            }
             if (b.ToLower() == "sammuta")
             {
+                Console.WriteLine("kiuas on nyt pois päältä\n");
                 päällä = false;
                 b = "a";
             }
