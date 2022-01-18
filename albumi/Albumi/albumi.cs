@@ -7,22 +7,37 @@ namespace Albumi
     class albumi
     {
         public List<string> kappaleet = new List<string>();
-
-
-        public void tulostadata()
+        public List<string> tiedot = new List<string>();
+        public void tulostatiedot()
         {
-            kappaleet.ForEach(num => Console.WriteLine(num + ", "));
+            Console.WriteLine("albumin tiedot:");
+            kappaleet.ForEach(tiedot=>Console.WriteLine(tiedot + ""));
+            
 
         }
-
-        public void lisääkappale()
+        public void tulostabiisit()
         {
-            kappaleet.Add("");
-            kappaleet.Add("");
-            kappaleet.Add("");
-            kappaleet.Add("");
-            kappaleet.Add("");
+            Console.WriteLine("biisit:");
+            kappaleet.ForEach(kappaleet => Console.WriteLine(kappaleet + ""));
         }
+        public void albumintiedot()
+        {
+
+            kappaleet.Add(" next to me");
+            kappaleet.Add(" i dont know why");
+            kappaleet.Add(" eliever");
+            kappaleet.Add(" thunder");
+        }
+        public void lisääkappaleet()
+        {
+
+            tiedot.Add("  artisti: imagine dragons");
+            tiedot.Add("  nimi: evolve");
+            tiedot.Add("  genre: pop rock");
+            tiedot.Add("  hinta 10€");
+        }
+        
+        
 
 
 
