@@ -11,14 +11,12 @@ namespace Albumi
         public void tulostatiedot()
         {
             Console.WriteLine("albumin tiedot:");
-            kappaleet.ForEach(tiedot=>Console.WriteLine(tiedot + ""));
-            
-
+            tiedot.ForEach(h=>Console.WriteLine(h + ""));
         }
         public void tulostabiisit()
         {
             Console.WriteLine("biisit:");
-            kappaleet.ForEach(kappaleet => Console.WriteLine(kappaleet + ""));
+            kappaleet.ForEach(g => Console.WriteLine(g + ""));
         }
         public void albumintiedot()
         {
@@ -34,7 +32,7 @@ namespace Albumi
             tiedot.Add("  artisti: imagine dragons");
             tiedot.Add("  nimi: evolve");
             tiedot.Add("  genre: pop rock");
-            tiedot.Add("  hinta 10€");
+            tiedot.Add("  hinta 10e");
         }
         
         
