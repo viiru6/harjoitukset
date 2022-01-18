@@ -6,7 +6,10 @@ namespace Albumi
     {
         static void Main(string[] args)
         {
-           
+            Console.Title = "albumi tehtävä";
+
+
+
         }
     }
 }

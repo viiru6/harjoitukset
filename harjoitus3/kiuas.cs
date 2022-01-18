@@ -18,7 +18,7 @@ namespace harjoitus3
         public void tila()
         {
             string b;
-            Console.WriteLine("toiminnot <käynnistä> <sammuta> <säädä>");
+            Console.WriteLine("Toiminnot: <käynnistä> <sammuta> <säädä>");
             b = Console.ReadLine();
             if (b.ToLower() == "käynnistä")
             {
