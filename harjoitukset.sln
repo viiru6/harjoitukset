@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "harjoitus2", "..\harjoitus2
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "harjoitus3", "harjoitus3\harjoitus3.csproj", "{D11EA2A7-9984-44C7-9233-C36577175EBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "laskin", "laskin\laskin.csproj", "{9B95309E-B524-49B3-8815-E6573E748843}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "laskin", "laskin\laskin.csproj", "{9B95309E-B524-49B3-8815-E6573E748843}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "harjoitus 6 eläimet", "harjoitus 6 eläimet\harjoitus 6 eläimet.csproj", "{F0404E5D-8054-41B3-9E90-D510A5BA1C07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "harjoitus 6 eläimet", "harjoitus 6 eläimet\harjoitus 6 eläimet.csproj", "{F0404E5D-8054-41B3-9E90-D510A5BA1C07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "harjoitus 7 hissi", "harjoitus 7 hissi\harjoitus 7 hissi.csproj", "{320A970D-0E65-4BAE-A3F4-AA564399E01D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F0404E5D-8054-41B3-9E90-D510A5BA1C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0404E5D-8054-41B3-9E90-D510A5BA1C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0404E5D-8054-41B3-9E90-D510A5BA1C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320A970D-0E65-4BAE-A3F4-AA564399E01D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320A970D-0E65-4BAE-A3F4-AA564399E01D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320A970D-0E65-4BAE-A3F4-AA564399E01D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320A970D-0E65-4BAE-A3F4-AA564399E01D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
