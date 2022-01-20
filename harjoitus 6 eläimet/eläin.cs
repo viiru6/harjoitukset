@@ -18,7 +18,7 @@ namespace harjoitus_6_eläimet
         }
         public static void määrä()
         {
-            Console.WriteLine(instanssit + " eläintä");
+            Console.WriteLine("eläimet luotu: "+ instanssit);
         }
         public override string ToString()
         {

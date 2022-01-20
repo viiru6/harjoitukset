@@ -16,10 +16,10 @@ namespace harjoitus_6_eläimet
             eläin poro2 = new poro();
             poro1.nimi = "petteri";
             poro2.nimi = "pate";
-            eläin.määrä();
             Console.WriteLine(apina1.ToString());
             Console.WriteLine(poro2.ToString());
             apina1.puhu();
+            eläin.määrä();
             Console.ReadLine();
 
         }
