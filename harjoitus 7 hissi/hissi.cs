@@ -4,20 +4,40 @@ using System.Text;
 
 namespace harjoitus_7_hissi
 {
-    class hissi
+    class hissi : Program
     {
-        static int kerros = 0;
-        private readonly int minKerros = 0;
-        private readonly int maxKerros = 6;
+        static int kerros = 1;
+        static int b = 2;
+        public static int minKerros = 1;
+        public static int maxKerros = 6;
         public static void kerroksenKysyminen()
         {
-            Console.WriteLine("mihin kerrokseen haluat 1-6?");
-            try
+            for(; ;)
             {
-                kerros = Convert.ToInt32(Console.ReadLine());
-            }
-             catch{
-                Console.WriteLine("virheellinen syöte");
+                Console.WriteLine("mihin kerrokseen haluat 1-6?");
+                
+                try
+                {
+                    kerros = Convert.ToInt32(Console.ReadLine());
+                    if(kerros < minKerros)
+                    {
+                        kerros = minKerros;
+                    }
+                    if (kerros > maxKerros)
+                    {
+                        kerros = maxKerros;
+                    }
+                }
+                
+                catch
+                {
+                    Console.WriteLine("virheellinen syöte. ole hyvä ja yritä uudelleen.");
+                }
+                finally
+                {
+                    Console.WriteLine("olet nyt kerroksessa: " + kerros);
+                    Console.WriteLine();
+                }
             }
 
 
