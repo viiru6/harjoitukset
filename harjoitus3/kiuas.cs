@@ -36,21 +36,21 @@ namespace harjoitus3
                 päällä = false;
                 b = "a";
             }
-                if (b.ToLower() == "säädä")
-                {
-                    Console.WriteLine("anna haluttu lämpötila: ");
-                    lämpötila = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("anna haluttu kosteus: ");
-                    kosteus = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("\n");
+            if (b.ToLower() == "säädä")
+            {
+                Console.WriteLine("anna haluttu lämpötila: ");
+                lämpötila = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("anna haluttu kosteus: ");
+                kosteus = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("\n");
                 if (päällä)
                 {
                     Console.WriteLine("kiuas on päällä");
                     Console.WriteLine("lämpötila: " + lämpötila);
                     Console.WriteLine("kosteus: " + kosteus);
                 }
-                    b = "a";
-                }
+                b = "a";
+            }
         
            
         }
