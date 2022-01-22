@@ -6,7 +6,6 @@ namespace harjoitus_9
 {
     class radio
     {
-        public radio Radio = new radio();
         private static int ääni;
         private static int minÄäni = 0;
         private static int maxÄäni = 9;
@@ -78,6 +77,7 @@ namespace harjoitus_9
         {
             if (päällä)
             {
+                Console.WriteLine("kanavien tajuudet: kanava1: 100 ja kanava2: 105.75");
                 Console.WriteLine("valitse tajuus 88,0 - 107,9: ");
                 try
                 {

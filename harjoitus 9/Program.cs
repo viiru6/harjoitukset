@@ -9,6 +9,8 @@ namespace harjoitus_9
             
             for(; ; )
             {
+                kanava Kanava1 = new kanava("kanava1", 100D);
+                kanava Kanava2 = new kanava("kanava2", 105.75D);
                 radio.komennot();
                 if (b.ToLower() == "päälle")
                 {
@@ -26,7 +28,7 @@ namespace harjoitus_9
                 {
                     radio.tajuudenValinta();
                 }
-                kanava Kanava1 = new kanava("kanava1", 100D);
+                
 
 
             }
