@@ -28,7 +28,14 @@ namespace harjoitus_9
                 {
                     radio.tajuudenValinta();
                 }
-                
+                if (radionTaajuus == 100D)
+                {
+                    Console.WriteLine("tervetuloa! olet nyt kanavalla1");
+                }
+                if (radionTaajuus == 105.75D)
+                {
+                    Console.WriteLine("tervetuloa! olet nyt kanavalla2");
+                }
 
 
             }

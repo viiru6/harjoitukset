@@ -9,7 +9,7 @@ namespace harjoitus_9
         private static int ääni;
         private static int minÄäni = 0;
         private static int maxÄäni = 9;
-        private static double radionTaajuus;
+        public static double radionTaajuus;
         private static double minRadionTaajuus = 88.0f;
         private static double maxRadionTaajuus = 107.9f;
         public static Boolean päällä;
@@ -109,6 +109,7 @@ namespace harjoitus_9
             {
                 Console.WriteLine("radio on pois päältä");
             }
+
         }
     }
 }

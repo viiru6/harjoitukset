@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "harjoitus 8", "harjoitus 8\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "harjoitus 9", "harjoitus 9\harjoitus 9.csproj", "{B6E38548-9247-46B8-96D6-77425C10717B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "harjoitus 10", "harjoitus 10\harjoitus 10.csproj", "{255706FD-613F-4A3C-9EAD-B3FA9623C3AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "harjoitus 11", "harjoitus 11\harjoitus 11.csproj", "{4ADA2155-0D17-414F-A0AB-7FA3C1585FFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{B6E38548-9247-46B8-96D6-77425C10717B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6E38548-9247-46B8-96D6-77425C10717B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6E38548-9247-46B8-96D6-77425C10717B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{255706FD-613F-4A3C-9EAD-B3FA9623C3AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{255706FD-613F-4A3C-9EAD-B3FA9623C3AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{255706FD-613F-4A3C-9EAD-B3FA9623C3AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{255706FD-613F-4A3C-9EAD-B3FA9623C3AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ADA2155-0D17-414F-A0AB-7FA3C1585FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ADA2155-0D17-414F-A0AB-7FA3C1585FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ADA2155-0D17-414F-A0AB-7FA3C1585FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ADA2155-0D17-414F-A0AB-7FA3C1585FFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
