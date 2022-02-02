@@ -1,0 +1,32 @@
+﻿<Window x:Class="harjoitus_16.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:harjoitus_16"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="269*"/>
+            <ColumnDefinition Width="59*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="193*"/>
+            <ColumnDefinition Width="269*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="kilometrit" HorizontalAlignment="Left" Height="84" Margin="170,94,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="496" FontSize="45" Grid.ColumnSpan="5" UndoLimit="10000" ToolTip="kirjoita haluamasi kilometri määrä tähän" MaxLength="-1" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="mailit" HorizontalAlignment="Left" Height="84" Margin="170,264,0,0" TextWrapping="Wrap" Text="0&#xD;&#xA;" VerticalAlignment="Top" Width="496" FontSize="45" RenderTransformOrigin="-0.736,2.389" Grid.ColumnSpan="5" UndoLimit="10000" ToolTip="kirjoita haluamasi mailimäärä tähän"/>
+        <Button x:Name="___btnKmToMiles_" Content="btnKmToMiles" HorizontalAlignment="Left" Margin="170,178,0,0" VerticalAlignment="Top" Width="496" Height="86" FontSize="45" Click="onClick" Grid.ColumnSpan="5"/>
+        <TextBlock x:Name="virheilmoitukset" HorizontalAlignment="Left" Margin="247,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="48" Width="340" Grid.ColumnSpan="5" FontSize="40" Foreground="Red"/>
+    </Grid>
+</Window>
