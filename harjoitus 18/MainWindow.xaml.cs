@@ -42,6 +42,7 @@ namespace harjoitus_18
             }
             catch ( Exception)//virheen ilmoitus käyttäjälle. pääasissa jos ei käytä pilkkua vaan pistettä
             {
+                TulosText.Foreground = Brushes.Red;
                 TulosText.Text = "virhe";
             }
         }
@@ -60,6 +61,7 @@ namespace harjoitus_18
             }
             catch (Exception)//virheen ilmoitus käyttäjälle. pääasissa jos ei käytä pilkkua vaan pistettä
             {
+                TulosText.Foreground = Brushes.Red;
                 TulosText.Text = "virhe";
             }
         }
@@ -78,6 +80,7 @@ namespace harjoitus_18
             }
             catch (Exception)//virheen ilmoitus käyttäjälle. pääasissa jos ei käytä pilkkua vaan pistettä
             {
+                TulosText.Foreground = Brushes.Red;
                 TulosText.Text = "virhe";
             }
         }
@@ -95,6 +98,7 @@ namespace harjoitus_18
             }
             catch (Exception)//virheen ilmoitus käyttäjälle. pääasissa jos ei käytä pilkkua vaan pistettä
             {
+                TulosText.Foreground = Brushes.Red;
                 TulosText.Text = "virhe";
             }
         }     
