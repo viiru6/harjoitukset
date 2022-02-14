@@ -16,12 +16,13 @@ namespace harjoitus_9
         public static string b;
         private static int q;
         private static double w;
-        public static void komennot()
+        public static void komennot()//kysyy käyttäjältä mitä hän haluaa tehdä
         {
             Console.WriteLine("radion toiminnot: <päälle>/<pois> <äänenVoimakkuus> <taajuudenValinta>");
             b = Console.ReadLine();
+            Console.WriteLine();
         }
-        public static void päällePois()
+        public static void päällePois()//radion säätö päälle/pois ja tietojen tulostus
         {
             if (b.ToLower() == "päälle")
             {
@@ -52,7 +53,7 @@ namespace harjoitus_9
                 }
                 finally
                 {
-                    if (q < 9 & q > 0) // jos syötetty numero on oikein
+                    if (q < 10 & q > -1) // jos syötetty numero on oikein
                     {
                         ääni = q;
                         Console.WriteLine("äänen voimakkuus on nyt: " + ääni);
@@ -74,7 +75,7 @@ namespace harjoitus_9
             }
         }
         public static void tajuudenValinta()
-        {
+        { 
             if (päällä)
             {
                 Console.WriteLine("kanavien tajuudet: kanava1: 100 ja kanava2: 105.75");
@@ -89,7 +90,7 @@ namespace harjoitus_9
                 }
                 finally
                 {
-                    if (w < 107.9D & w > 88.0D) // jos syötetty numero on oikein
+                    if (w < 107.89D & w > 87.99D) // jos syötetty numero on oikein
                     {
                         radionTaajuus = w;
                         Console.WriteLine("taajuus on nyt: " + radionTaajuus);

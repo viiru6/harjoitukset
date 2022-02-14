@@ -30,16 +30,15 @@ namespace harjoitus_9
                 }
                 if (radionTaajuus == 100D)
                 {
-                    Console.WriteLine("tervetuloa! olet nyt kanavalla1");
+                    Console.WriteLine("tervetuloa! olet nyt kanavalla1\n");
+                    radionTaajuus = 0;
                 }
                 if (radionTaajuus == 105.75D)
                 {
-                    Console.WriteLine("tervetuloa! olet nyt kanavalla2");
+                    Console.WriteLine("tervetuloa! olet nyt kanavalla2\n");
+                    radionTaajuus = 0;
                 }
-
-
             }
-
         }
     }
 }
