@@ -1,0 +1,26 @@
+﻿<Window x:Class="harjoitus_21.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:harjoitus_21"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <CheckBox x:Name="omenaBox" Content="" HorizontalAlignment="Left" Margin="187,88,0,0" VerticalAlignment="Top" Checked="omenaBox_Checked" Unchecked="omenaBox_IsNotChecked"/>
+        <CheckBox x:Name="banaaniBox" Content="" HorizontalAlignment="Left" Margin="187,108,0,0" VerticalAlignment="Top" Checked="banaaniBox_Checked" Unchecked="banaaniBox_IsNotChecked"/>
+        <CheckBox x:Name="leipäBox" Content="" HorizontalAlignment="Left" Margin="187,128,0,0" VerticalAlignment="Top" Checked="leipäBox_Checked" Unchecked="leipäBox_IsNotChecked"/>
+        <TextBlock x:Name="omenatext" HorizontalAlignment="Left" Margin="142,88,0,0" TextWrapping="Wrap" Text="omena:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="banaanitext" HorizontalAlignment="Left" Margin="137,108,0,0" TextWrapping="Wrap" Text="banaani:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="leipätext" HorizontalAlignment="Left" Margin="154,127,0,0" TextWrapping="Wrap" Text="leipä:" VerticalAlignment="Top"/>
+        <Button x:Name="OstaNappi" Content="OSTA" HorizontalAlignment="Left" Height="34" Margin="187,36,0,0" VerticalAlignment="Top" Width="160" FontSize="19" Click="OstaNappi_Click"/>
+        <TextBlock x:Name="ostoslistatext" HorizontalAlignment="Left" Margin="437,32,0,0" TextWrapping="Wrap" Text="ostoslista" VerticalAlignment="Top" FontSize="25"/>
+        <TextBlock x:Name="omenaText" HorizontalAlignment="Left" Margin="207,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
+        <TextBlock x:Name="banaaniText" HorizontalAlignment="Left" Margin="207,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
+        <TextBlock x:Name="leipäText" HorizontalAlignment="Left" Margin="207,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
+        <ListBox x:Name="ostosLista" HorizontalAlignment="Left" Height="112" Margin="437,65,0,0" VerticalAlignment="Top" Width="103"/>
+        <TextBlock x:Name="ostetuttuotteet" HorizontalAlignment="Left" Margin="569,32,0,0" TextWrapping="Wrap" Text="ostetut Tuotteet" VerticalAlignment="Top" FontSize="25" Width="184"/>
+        <ListBox x:Name="ostetutTuotteet" HorizontalAlignment="Left" Height="296" Margin="606,65,0,0" VerticalAlignment="Top" Width="104"/>
+
+    </Grid>
+</Window>
