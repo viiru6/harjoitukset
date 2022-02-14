@@ -6,19 +6,19 @@ namespace Albumi
 {
     class albumi
     {
-        public List<string> kappaleet = new List<string>();
-        public List<string> tiedot = new List<string>();
-        public void tulostatiedot()
+        public List<string> kappaleet = new List<string>();//luo kappaleet listan
+        public List<string> tiedot = new List<string>();//luo tiedot listan
+        public void tulostatiedot()//tulostaa tiedot listan
         {
             Console.WriteLine("albumin tiedot:");
             tiedot.ForEach(h=>Console.WriteLine(h + ""));
         }
-        public void tulostabiisit()
+        public void tulostabiisit()//tulostaa kappaleet listan
         {
             Console.WriteLine("biisit:");
             kappaleet.ForEach(g => Console.WriteLine(g + ""));
         }
-        public void albumintiedot()
+        public void albumintiedot()//lisää tiedot kappale listaan
         {
 
             kappaleet.Add(" next to me");
@@ -26,7 +26,7 @@ namespace Albumi
             kappaleet.Add(" eliever");
             kappaleet.Add(" thunder");
         }
-        public void lisääkappaleet()
+        public void lisääkappaleet()// lisää tiedot listan tiedot
         {
 
             tiedot.Add("  artisti: imagine dragons");
