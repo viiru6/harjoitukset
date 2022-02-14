@@ -33,6 +33,7 @@ namespace harjoitus_18
             merkki.Text = "+";
             KertoMerkki.Text = "";
             JakoMerkki.Text = "";
+            TulosText.Foreground = Brushes.Black;
             try
             {
                 numero1 = Convert.ToDouble(numeroKenttä1.Text);//numeron convertointi ja lasku toimitus
@@ -52,6 +53,7 @@ namespace harjoitus_18
             merkki.Text = "-";
             KertoMerkki.Text = "";
             JakoMerkki.Text = "";
+            TulosText.Foreground = Brushes.Black;
             try
             {
                 numero1 = Convert.ToDouble(numeroKenttä1.Text);//numeron convertointi ja lasku toimitus
@@ -71,6 +73,7 @@ namespace harjoitus_18
             KertoMerkki.Text = "";
             JakoMerkki.FontSize = 10;
             JakoMerkki.Text = "➗";
+            TulosText.Foreground = Brushes.Black;
             try
             {
                 numero1 = Convert.ToDouble(numeroKenttä1.Text);//numeron convertointi ja lasku toimitus
@@ -89,6 +92,7 @@ namespace harjoitus_18
             merkki.Text = "";//fontin korjaus
             KertoMerkki.Text = "•";
             JakoMerkki.Text = "";
+            TulosText.Foreground = Brushes.Black;
             try
             {
                 numero1 = Convert.ToDouble(numeroKenttä1.Text);//numeron convertointi ja lasku toimitus
