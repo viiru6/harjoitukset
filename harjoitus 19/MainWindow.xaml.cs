@@ -39,7 +39,6 @@ namespace harjoitus_19
                 virhe.Text = "virhe";
             }
         }
-
         private void DoubleClick(object sender, MouseButtonEventArgs e)
         {
             kerrosTextBox.Text = "";
@@ -58,7 +57,7 @@ namespace harjoitus_19
             }
             catch (Exception)//virhe ilmoitus
             {
-                virhe.Foreground = Brushes.Red;
+                virhe.Foreground = Brushes.Green;
                 virhe.Text = "syötä numero";
             }
             finally
@@ -73,6 +72,7 @@ namespace harjoitus_19
                 {
                     KerrosNumero.Text = annettuKerros.ToString();//tulostaa numeron jos se on 1-6
                     kerrosTextBox.Text = "";
+                    virhe.Foreground = Brushes.Black;
                 }
             }
         }
