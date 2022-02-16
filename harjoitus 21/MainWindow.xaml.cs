@@ -60,7 +60,7 @@ namespace harjoitus_21
         }
         private void OstaNappi_Click(object sender, RoutedEventArgs e)
         {
-            ostosLista.Items.Clear(); //tyhjentää ostos listän
+            ostosLista.Items.Clear(); //tyhjentää ostos listan
             if (omenaBox.IsChecked != false)//jos tuote on valitt niin se lisätään ostetuttujen tuotteiden listalle
             {
                 ostetutTuotteet.Items.Add("omena");//jos tuote on valitt niin se lisätään ostetuttujen tuotteiden listalle

@@ -1,0 +1,23 @@
+﻿<Window x:Class="harjoitus_24.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:harjoitus_24"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="33" Margin="118,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="375"/>
+        <Button x:Name="uusiRiviNappi" Content="uusi rivi" HorizontalAlignment="Left" Margin="188,46,0,0" VerticalAlignment="Top" Width="75" Click="uusiRiviNappi_Click"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="401" Margin="516,7,0,0" Stroke="Black" VerticalAlignment="Top" Width="196"/>
+        <ListBox x:Name="LottoRivit" HorizontalAlignment="Left" Height="373" Margin="530,21,0,0" VerticalAlignment="Top" Width="168"/>
+        <Button x:Name="pelinValinta" Content="lotto" HorizontalAlignment="Left" Margin="263,46,0,0" VerticalAlignment="Top" Width="75" Click="PelinValintaNappiLotto"/>
+        <Button x:Name="pelinValinta_Copy" Content="viking lotto" HorizontalAlignment="Left" Margin="338,46,0,0" VerticalAlignment="Top" Width="75" Click="PelinValintaNappiLVikingotto"/>
+        <Button x:Name="pelinValintaEJ" Content="eurojackpot" HorizontalAlignment="Left" Margin="412,46,0,0" VerticalAlignment="Top" Width="75" Click="PelinValintaNappiLEurojackpot"/>
+        <Ellipse x:Name="lottoValo" Fill="#FF008800" HorizontalAlignment="Left" Height="27" Margin="289,8,0,0" Stroke="Black" VerticalAlignment="Top" Width="29"/>
+        <Ellipse x:Name="VikinglottoValo" Fill="Red" HorizontalAlignment="Left" Height="27" Margin="364,8,0,0" Stroke="Black" VerticalAlignment="Top" Width="29"/>
+        <Ellipse x:Name="EurojackpotValo" Fill="Red" HorizontalAlignment="Left" Height="27" Margin="438,8,0,0" Stroke="Black" VerticalAlignment="Top" Width="29"/>
+        <TextBox x:Name="rivienMäärä" HorizontalAlignment="Left" Height="20" Margin="148,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="35"/>
+        <TextBlock HorizontalAlignment="Left" Margin="121,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="24"><Run Text="rivit:"/><LineBreak/><Run/></TextBlock>
+    </Grid>
+</Window>
