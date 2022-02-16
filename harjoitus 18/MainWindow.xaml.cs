@@ -41,7 +41,7 @@ namespace harjoitus_18
                 tulos = numero1 + numero2;
                 TulosText.Text = tulos.ToString();
             }
-            catch ( Exception)//virheen ilmoitus käyttäjälle. pääasissa jos ei käytä pilkkua vaan pistettä
+            catch (Exception)//virheen ilmoitus käyttäjälle. pääasissa jos ei käytä pilkkua vaan pistettä
             {
                 TulosText.Foreground = Brushes.Red;
                 TulosText.Text = "virhe";

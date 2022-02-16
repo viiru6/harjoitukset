@@ -1,0 +1,66 @@
+﻿<Window x:Class="harjoitus22.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:harjoitus22"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle x:Name="neliö" HorizontalAlignment="Left" Height="241" Margin="459,96,0,0" VerticalAlignment="Top" Width="286" Stroke="#FF3796B9">
+            <Rectangle.Fill>
+                <ImageBrush/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBox x:Name="ikkunanLeveysText" HorizontalAlignment="Left" Height="25" Margin="610,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" MouseDoubleClick="DoubleClick"/>
+        <TextBox x:Name="ikkunanKorkeusText" HorizontalAlignment="Left" Height="25" Margin="610,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" MouseDoubleClick="DoubleClick"/>
+        <TextBox x:Name="karmipuunLeveysText" HorizontalAlignment="Left" Height="25" Margin="610,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" MouseDoubleClick="DoubleClick"/>
+        <TextBox x:Name="ikkunanPintaAlaText" HorizontalAlignment="Left" Height="25" Margin="610,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox x:Name="LasinPintaAlaText" HorizontalAlignment="Left" Height="25" Margin="610,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox x:Name="KarminPiiriText" HorizontalAlignment="Left" Height="25" Margin="610,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBlock HorizontalAlignment="Left" Margin="466,127,0,0" TextWrapping="Wrap" Text="ikkunan leveys(mm):" VerticalAlignment="Top" Height="25" Width="129"/>
+        <TextBlock HorizontalAlignment="Left" Margin="466,157,0,0" TextWrapping="Wrap" Text="ikkunan korkeus(mm):" VerticalAlignment="Top" Height="25" Width="129"/>
+        <TextBlock HorizontalAlignment="Left" Margin="466,187,0,0" TextWrapping="Wrap" Text="karmipuun leveys(mm):" VerticalAlignment="Top" Height="25" Width="129"/>
+        <TextBlock HorizontalAlignment="Left" Margin="466,248,0,0" TextWrapping="Wrap" Text="ikkunan pinta-ala:" VerticalAlignment="Top" Height="25" Width="129"/>
+        <TextBlock HorizontalAlignment="Left" Margin="466,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="129" FontSize="10"><Run Text="lasin "/><Run FontSize="12" Text="pinta"/><Run Text="-ala:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="466,307,0,0" TextWrapping="Wrap" Text="karmin piiri:" VerticalAlignment="Top" Height="25" Width="129"/>
+        <Button x:Name="laskenNappi_Copy" Content="laske" HorizontalAlignment="Left" Margin="459,96,0,0" VerticalAlignment="Top" Width="286" Click="laskenNappi_Click" FontSize="15" Height="26"/>
+        <TextBlock x:Name="virheText" HorizontalAlignment="Left" Margin="466,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="279"/>
+        <Rectangle x:Name="karmi" HorizontalAlignment="Left" Height="180" Margin="18,127,0,0" Stroke="#FF3796B9" VerticalAlignment="Top" Width="340" Fill="#FF7A300E" Visibility="Visible"/>
+        <Rectangle x:Name="lasi" Fill="#FF21F5FF" HorizontalAlignment="Left" Height="160" Margin="28,137,0,0" Stroke="#FF33BEF1" VerticalAlignment="Top" Width="320" Visibility="Visible"/>
+        <Separator x:Name="ikkunanLeveysSeparator" HorizontalAlignment="Left" Height="4" Margin="18,287,0,0" VerticalAlignment="Top" Width="340" Background="Red" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="3"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Separator x:Name="ikkunanKorkeusSeparator" HorizontalAlignment="Left" Height="4" Margin="-52,215,0,0" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.5,0.5" Background="Red">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="3"/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Separator x:Name="karminLeveysSeparator" HorizontalAlignment="Left" Height="6" Margin="347,163,0,0" VerticalAlignment="Top" Width="11" Background="Red" RenderTransformOrigin="3.75,-0.778">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="3"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-15.336"/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Label x:Name="korkeusLabel" Content="H: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,206,0,0" Width="97" FontSize="10"/>
+        <Label x:Name="LeveysLabel" Content="L: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="126,267,0,0" Width="97" FontSize="10"/>
+        <Label x:Name="KarminLeveysLabel" Content="W: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="358,154,0,0" Width="96" FontSize="10" Height="24"/>
+
+    </Grid>
+</Window>
