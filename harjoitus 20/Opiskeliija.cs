@@ -9,26 +9,23 @@ namespace harjoitus_20
     class Opiskeliija :MainWindow
     {
         public static string ENimi;
-        string SNimi;
-        string OpiskelijaID;
-        string SPosti;
-        int Puh; 
-        
+        public static string SNimi;
+        public static string OpiskelijaID;
+        public static string SPosti;
+        public static int Puh;
         public Opiskeliija(string enimi, string snimi, string opiskelijaID, string sposti, int puh)
         {
-            ENimi = enimi;
-            SNimi = snimi;
-            OpiskelijaID = opiskelijaID;
-            SPosti = sposti;
-            Puh = puh;
-
+            ENimi = en;
+            SNimi = sn;
+            OpiskelijaID = oID;
+            SPosti = sp;
+            Puh = p;
         }
-        Opiskeliija opiskeliija = new Opiskeliija(enimi = );
-        public static void a()
-        {
-            
-        }
-
-
+        public static Opiskeliija opiskeliija = new Opiskeliija
+            (ENimi = en,
+            SNimi = sn,
+            OpiskelijaID = oID,
+            SPosti = sp,
+            Puh = p);
     }
 }

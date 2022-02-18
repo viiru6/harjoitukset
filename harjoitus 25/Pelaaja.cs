@@ -6,14 +6,28 @@ using System.Threading.Tasks;
 
 namespace harjoitus_25
 {
-    class Pelaaja
+    [Serializable]
+    class Pelaaja :MainWindow
     {
-        double ikä;
-        string ENimi;
-        string SNimi;
-        int pelaajaNumero;
-        string joukkue;
-
+        public static double Ikä;
+        public static string ENimi;
+        public static string SNimi;
+        public static int PelaajaNumero;
+        public static string Joukkue;
+        public Pelaaja(string enimi, string snimi, double ikä, string joukkue, int pelaajanumero)
+        {
+            ENimi = enimi;
+            SNimi = snimi;
+            Ikä = ikä;
+            Joukkue = joukkue;
+            PelaajaNumero = pelaajanumero;
+        }
+        public static Pelaaja opiskeliija = new Pelaaja
+            (ENimi = en,
+            SNimi = sn,
+            Ikä = i,
+            Joukkue = j,
+            PelaajaNumero = p);
 
 
     }

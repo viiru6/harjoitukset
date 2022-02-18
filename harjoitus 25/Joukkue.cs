@@ -6,14 +6,9 @@ using System.Threading.Tasks;
 
 namespace harjoitus_25
 {
+    [Serializable]
     class Joukkue
     {
-        string nimi;
-        string kotiKaupunki;
-        string pelaaja1;
-        string pelaaja2;
-        string pelaaja3;
-        string pelaaja4;
-        string pelaaja5;
+        public string joukkueenNimi { get; set; }
     }
 }

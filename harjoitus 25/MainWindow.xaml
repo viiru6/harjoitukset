@@ -7,9 +7,57 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="207" Margin="168,72,0,0" VerticalAlignment="Top" Width="151"/>
-        <DataGrid HorizontalAlignment="Left" Height="207" Margin="480,72,0,0" VerticalAlignment="Top" Width="151"/>
-        <DataGrid HorizontalAlignment="Left" Height="207" Margin="324,72,0,0" VerticalAlignment="Top" Width="151"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="210" Margin="154,51,0,0" Stroke="Black" VerticalAlignment="Top" Width="615"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="30" Margin="15,18,0,0" Stroke="Black" VerticalAlignment="Top" Width="175" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.439"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.326"/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Button x:Name="LisääNappi" Content="lisää tietoja" HorizontalAlignment="Left" Margin="20,23,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click"/>
+        <ListBox x:Name="taulu1" HorizontalAlignment="Left" Height="191" Margin="164,65,0,0" VerticalAlignment="Top" Width="195"/>
+        <Button x:Name="PoistaNappi" Content="poista tietoja" HorizontalAlignment="Left" Margin="105,23,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click2"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="168" Margin="17,51,0,0" Stroke="Black" VerticalAlignment="Top" Width="132"/>
+        <TextBox x:Name="EtunimiText" HorizontalAlignment="Left" Height="20" Margin="78,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"/>
+        <TextBox x:Name="SukunimiText" HorizontalAlignment="Left" Height="20" Margin="78,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"/>
+        <TextBox x:Name="IkäText" HorizontalAlignment="Left" Height="20" Margin="78,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"/>
+        <TextBox x:Name="PelaajaNumeroText" HorizontalAlignment="Left" Height="20" Margin="78,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,56,0,0" TextWrapping="Wrap" Text="etunimi:" VerticalAlignment="Top" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,81,0,0" TextWrapping="Wrap" Text="sukunimi:" VerticalAlignment="Top" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,106,0,0" TextWrapping="Wrap" Text="ikä:" VerticalAlignment="Top" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,131,0,0" TextWrapping="Wrap" Text="pelaaja n.:" VerticalAlignment="Top" Height="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="22,156,0,0" TextWrapping="Wrap" Text="joukkue:" VerticalAlignment="Top" Height="20"/>
+        <RadioButton x:Name="kissatNappi" Content="kissat" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="78,157,0,0" Checked="kissatNappi_Checked"/>
+        <RadioButton x:Name="KoiratNappi" Content="koirat" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="78,177,0,0" Checked="KoiratNappi_Checked"/>
+        <RadioButton x:Name="RotatNappi" Content="rotat" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="78,197,0,0" Checked="RotatNappi_Checked"/>
+        <ListBox x:Name="taulu2" HorizontalAlignment="Left" Height="191" Margin="364,65,0,0" VerticalAlignment="Top" Width="195"/>
+        <ListBox x:Name="taulu3" HorizontalAlignment="Left" Height="191" Margin="564,65,0,0" VerticalAlignment="Top" Width="195"/>
+        <TextBlock x:Name="virheText" HorizontalAlignment="Left" Margin="22,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="47"><Run/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="tyhjennä1" Content="tyhjennä" HorizontalAlignment="Left" Margin="284,23,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="tyhjennä1_Click"/>
+        <Button x:Name="tyhjennä2" Content="tyhjennä" HorizontalAlignment="Left" Margin="484,23,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="tyhjennä2_Click"/>
+        <Button x:Name="tyhjennä3" Content="tyhjennä" HorizontalAlignment="Left" Margin="684,23,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="tyhjennä3_Click"/>
+        <ListBox x:Name="taulu2Joukkue" HorizontalAlignment="Left" Height="191" Margin="484,65,0,0" VerticalAlignment="Top" Width="75"/>
+        <ListBox x:Name="taulu3Joukkue" HorizontalAlignment="Left" Height="191" Margin="684,65,0,0" VerticalAlignment="Top" Width="75"/>
+        <ListBox x:Name="taulu1Joukkue" HorizontalAlignment="Left" Height="191" Margin="284,65,0,0" VerticalAlignment="Top" Width="75"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="30" Margin="15,265,0,0" Stroke="Black" VerticalAlignment="Top" Width="175" RenderTransformOrigin="0.531,6.157">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.439"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.367"/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Button x:Name="TallennaNappi" Content="tallenna" HorizontalAlignment="Left" Margin="20,270,0,0" VerticalAlignment="Top" Width="80" Click="TallennaNappi_Click"/>
+        <Button x:Name="LataaNappi" Content="lataa" HorizontalAlignment="Left" Margin="105,270,0,0" VerticalAlignment="Top" Width="80" Click="LataaNappi_Click"/>
 
     </Grid>
 </Window>
