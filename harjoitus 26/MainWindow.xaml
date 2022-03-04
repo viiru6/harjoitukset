@@ -7,13 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="Lista" HorizontalAlignment="Left" Height="355" Margin="536,23,0,0" VerticalAlignment="Top" Width="184" Background="#FFFFF4F4"/>
-        <Button x:Name="LisääNappi" Content="Lisää" HorizontalAlignment="Left" Margin="40,40,0,0" VerticalAlignment="Top" Width="75" Click="LisääNappi_Click"/>
-        <TextBox x:Name="Teksti" HorizontalAlignment="Left" Height="23" Margin="40,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <ListBox x:Name="Lista2" HorizontalAlignment="Left" Height="355" Margin="504,23,0,0" VerticalAlignment="Top" Width="32" Background="#FFC1BDBD"/>
-        <TextBlock HorizontalAlignment="Left" Margin="40,65,0,0" TextWrapping="Wrap" Text="kirjan nimi:" VerticalAlignment="Top"/>
-        <Button x:Name="PoistaNappi" Content="poista" HorizontalAlignment="Left" Margin="115,40,0,0" VerticalAlignment="Top" Width="75" Click="PoistaNappi_OnClick"/>
-        <Button x:Name="TyhjennäNappi" Content="tyjennä" HorizontalAlignment="Left" Margin="190,40,0,0" VerticalAlignment="Top" Width="75" Click="TyhjennäNappi_Click" RenderTransformOrigin="0.12,0.9"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70*"/>
+            <ColumnDefinition Width="29*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="Lista" HorizontalAlignment="Left" Height="355" Margin="521,35,0,0" VerticalAlignment="Top" Width="184" Background="#FFF4F4F5" Grid.ColumnSpan="2"/>
+        <ListBox x:Name="Lista2" HorizontalAlignment="Left" Height="355" Margin="489,35,0,0" VerticalAlignment="Top" Width="32" Background="#FFF4F4F5" ScrollViewer.CanContentScroll="False" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden"/>
+        <TextBlock HorizontalAlignment="Left" Margin="489,19,0,0" TextWrapping="Wrap" Text="kirjat:" VerticalAlignment="Top" Width="32"/>
+        <TextBlock x:Name="numero" HorizontalAlignment="Left" Margin="520,19,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" Text="0"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="96" Margin="26,35,0,0" Stroke="Black" VerticalAlignment="Top" Width="461" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.001"/>
+                    <RotateTransform Angle="0.015"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Button x:Name="LisääNappi" Content="Lisää" HorizontalAlignment="Left" Margin="29,38,0,0" VerticalAlignment="Top" Width="188" Click="LisääNappi_Click" Height="45" FontSize="25"/>
+        <TextBox x:Name="Teksti" HorizontalAlignment="Left" Height="45" Margin="218,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="266" TextChanged="Teksti_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="218,38,0,0" TextWrapping="Wrap" Text="kirjan nimi:" VerticalAlignment="Top" Height="45" Width="124" FontSize="25"/>
+        <Button x:Name="PoistaNappi" Content="poista viimeisin" HorizontalAlignment="Left" Margin="29,84,0,0" VerticalAlignment="Top" Width="188" Click="PoistaNappi_OnClick" Height="45" FontSize="25" MouseDoubleClick="PoistaNappi_DoubleClick" ToolTip="tupla klikkaus tyhjentää kaiken"/>
 
     </Grid>
 </Window>
