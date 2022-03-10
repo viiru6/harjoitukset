@@ -349,9 +349,9 @@ namespace harjoitus_25
         {
             t3();
         }
-        private void TallennaNappi_Click(object sender, RoutedEventArgs e)//serialisoinin kokeilu mutta en onnistunut jatkamaan ja serialisoimaan listoja
+        private void TallennaNappi_Click(object sender, RoutedEventArgs e)//serialisoinin kokeilu mutta en onnistunut niin en yrittäny jatkaa ja serialisoida listoja
         {
-            Joukkue joukkue = new Joukkue { joukkueenNimi = "hevoset" };
+            Joukkue joukkue = new Joukkue { joukkueenNimi = "testi" };
             Stream writestream = new FileStream("harjoitus25.bin", FileMode.Create, FileAccess.Write, FileShare.None);
             IFormatter formatter = new BinaryFormatter();
             formatter.Serialize(writestream, joukkue);
